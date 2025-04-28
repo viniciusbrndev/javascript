@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando condições</title>
+</head>
+<body>
+    <h1>Em que país você mora?</h1>
+    <label for="pais">Escolha seu país</label>
+    <select name="pais" id="ipais" >
+        <option value="AS">Africa do sul</option>
+        <option value="BR">Brasil</option>
+        <option value="EUA">Estados Unidos</option>
+        <option value="SU">Suécia</option>
+        <option value="FR">França</option>
+        <option value="RU">Rússia</option>
+    </select>
+    <input type="submit" value="Enviar" onclick="pais()">
+    <div id="res">Você é...</div>
+    <script>
+        function pais(){
+            
+            var res = document.querySelector("div#res")
+            
+            var selectPais = document.querySelector("#ipais")
+            
+            var meupais = selectPais.value
+
+            if (meupais != "BR") {
+                res.innerHTML = "Você é estrangeiro!"
+            }
+            else{
+                res.innerHTML = "Você é da zueira!"
+            }
+        }
+    </script>
+</body>
+</html>
