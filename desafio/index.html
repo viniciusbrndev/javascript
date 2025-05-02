@@ -8,10 +8,27 @@
 </head>
 <body>
     <main>
-        <h1>Título</h1>
+        <h1>Verificador de idade e gênero</h1>
         <section>
-            <div></div>
-            <div></div>
+            
+            <div id="img">
+                <img id="eimg" src="imgs/img03.png" alt="Imgperfil">
+            </div>
+            <div id="res">
+                <form action="" method="post">
+                    <label for="iano">Ano de nascimento</label>
+                    <input type="number" name="ano" id="iano" placeholder="Ano em que naceu">
+                    <p>Seu gênero</p>
+                    <select name="sexo" id="isexo">
+                        <p>Seu gêenero</p>
+                        <option value="men">Masculino</option>
+                        <option value="wom">Feminino</option>
+                        <option value="null">Outro</option>
+                    </select>
+                    
+                </form>
+                <button onclick="suaidade()">Enviar</button>
+            </div>
         </section>
     </main>
     <footer>Produzido por mim, com base nas aulas do Curso em Vídeo</footer>
