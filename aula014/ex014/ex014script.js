@@ -17,16 +17,21 @@ function count(){
     }
     else{
         if (steps <= 0){
-            window.alert("PASSO INVÁLIDO, 1 será atribuido como valor")
-            steps = 1}        
+            window.alert("PASSO INVÁLIDO, 1 será atribuído como valor")
+            steps = 1 
+        }        
         }
-        //contagem progressiva
+        //contagem
         if (interval > start) {
             for(var current = start; current <=interval; current += steps){
-                res.innerHTML += `${current}`
+                res.innerHTML += `${current} →`
+            }}
+        else{
+            for(var current = start; current >= interval; current -= steps){
+                res.innerHTML += `${current} →`
             }
-        
         }
-    
     }
-    res.innerHTML = res.innerHTML.slice(0, -2);
+    
+
+    res.innerHTML = res.innerHTML.slice(0, -2)
