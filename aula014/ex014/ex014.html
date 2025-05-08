@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+    <script src="ex014script.js"></script>
+    <style>
+        body{
+            background-color: rgb(38, 173, 218);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        section{
+            width: 500px;
+            height: 300px;
+            display: block;
+
+            margin: auto;
+            padding: 20px;
+            color: black;
+            background-color: white;
+
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.321);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contagem</h1>
+        <section>
+            <div>
+                <p>
+                    <label for="istart">Inicio</label>
+                    <input type="number" name="start" id="istart">
+                </p>
+
+                <p>
+                    <label for="interb">Intervalo</label> <input type="number" name="inter" id="interb">
+                </p>
+                
+                <p>
+                    <label for="ipasso">Passos</label>
+                <input type="number" name="passo" id="ipasso">
+            </p>
+            </div>
+            
+            <p><input type="button" value="Contar" onclick="count()"></p>
+            <div id="res">
+            </div>
+        </section>
+    </header>
+</body>
+</html>

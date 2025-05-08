@@ -1,0 +1,34 @@
+@charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+section#conteudo{
+    width:500px ;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.258);
+    border-radius: 10px;
+    background-image: url(../);
+    margin: auto;
+    text-align: center;
+    font-size: 0.7em;
+    color: black;
+    padding: 20px;
+}
+
+div#foto{
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    
+    
+    margin-top: 60px;
+}
+div#msg{
+    color: black;
+}
