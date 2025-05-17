@@ -19,7 +19,7 @@ function count(){
         if (steps <= 0){
             window.alert("PASSO INVÁLIDO, 1 será atribuído como valor")
             steps = 1 
-        }        
+        }         
         }
         //contagem
         if (interval > start) {
