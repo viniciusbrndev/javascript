@@ -12,8 +12,21 @@
     </header>
     <main>
         <section>
-            <p>Insira um número de 1 - 100<input type="number" name="num" id="number"></p>
+            <div>
+                <p>Insira um número de 1 - 100<input type="number" name="num" id="number"> <input type="button" value="Enviar" onclick="adicionarNumeros()"></p>
+            </div>
+            <div id="select">
+                <select name="tag" id="target">
+                
+                </select>
+            </div>
+            <div id="res">
+                    <p>Quantidade: <span id="quantidade">0</span></p>
+                    <p>Soma: <span id="soma">0</span></p>
+                    <p>Média: <span id="media">0</span></p>
+            </div>
         </section>
     </main>
+    <script src="scripts/numeros.js"></script>
 </body>
 </html>
