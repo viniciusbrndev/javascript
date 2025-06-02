@@ -14,11 +14,11 @@ if(isNaN(value) || value > 100 || value < 1 ){
     input.focus()
     return
 } else{
-numeros.push(value)
-input.value = ""
-input.focus()
-atualizarSelect()
-atualizarResumo()
+    numeros.push(value)
+    input.value = ""
+    input.focus()
+    atualizarSelect()
+    atualizarResumo()
 }
 }
 
